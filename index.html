@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <p id="highScore"><a href="" id="scoreBoard">View High Scores</a></p>
+        <p id="timer">Timer: <span id="seconds">0</span></p>
+    </header>
+
+    <div class="introBox">
+        <h1 id="welcome">Welcome to the Coding Quiz Challenge!</h1>
+        <p id="rules">
+            Answer the following questions about HTML, CSS, and Javvascript win the given time!
+            Any wrong answers will reduce your score and time by five seconds!
+            Good luck!
+        </p>
+        <button id="begin">Begin the Quiz!</button>
+    </div>
+
+    <div id="quizBox">
+        <h1 id="questionNumber"></h1>
+        <h2 id="question"></h2>
+        <ol id="answers"></ol>
+        <h3 id="choiceResult"></h3>
+    </div>
+
+    <div id="resultBox">
+        <h1>Done!</h1>
+        <p>You scored <span id="score"></span>!</p>
+        <input type="text" name="initials" id="initials" placeholder="Enter your initials">
+        <button id="submit">Submit</button>
+    </div>
+
+    <div id="scoreBox">
+        <h1>Highscores</h1>
+        <button id="goBack">Go Back</button>
+        <button id="clearHighscores">Clear Scores</button>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
