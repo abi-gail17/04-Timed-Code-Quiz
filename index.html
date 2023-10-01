@@ -9,36 +9,37 @@
 
 <body>
     <header class="header">
-        <p id="highScore"><a href="" id="scoreBoard">View High Scores</a></p>
+        <p id="highScore"><a id="scoreBoard">View High Scores</a></p>
         <p id="timer">Timer: <span id="seconds">0</span></p>
     </header>
 
-    <div class="introBox">
+    <div class="introCard">
         <h1 id="welcome">Welcome to the Coding Quiz Challenge!</h1>
         <p id="rules">
-            Answer the following questions about HTML, CSS, and Javvascript win the given time!
+            Answer the following questions about HTML, CSS, and Javascript within the given time!
             Any wrong answers will reduce your score and time by five seconds!
             Good luck!
         </p>
         <button id="begin">Begin the Quiz!</button>
     </div>
 
-    <div id="quizBox">
+    <div id="quizCard">
         <h1 id="questionNumber"></h1>
         <h2 id="question"></h2>
         <ol id="answers"></ol>
         <h3 id="choiceResult"></h3>
     </div>
 
-    <div id="resultBox">
+    <div id="resultCard">
         <h1>Done!</h1>
-        <p>You scored <span id="score"></span>!</p>
+        <p><span id="scoreResult"></span></p>
         <input type="text" name="initials" id="initials" placeholder="Enter your initials">
         <button id="submit">Submit</button>
     </div>
 
-    <div id="scoreBox">
+    <div id="scoreCard">
         <h1>Highscores</h1>
+        <ol id="scoreList"></ol>
         <button id="goBack">Go Back</button>
         <button id="clearHighscores">Clear Scores</button>
     </div>
